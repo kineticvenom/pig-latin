@@ -8,26 +8,23 @@ exports.translate = function(word) {
     // console.log(wordSplit)
     i = 0
 
-   console.log(wordSplit[0][0])
+    if (vowels.includes(wordSplit[0][0])){
+        wordSplit[0]+= addPig
+        answerString += wordSplit[0]
+        
+    console.log(wordSplit.length)
     for(arr = 0; arr < wordSplit.length; arr++){
-        console.log(wordSplit[0][0])
-        if (vowels.includes(wordSplit[0][0])){
-            wordSplit[arr]+= addPig
-            answerString += wordSplit[arr]
-            console.log(answerString)
-            // return answerString
-        }else 
-        console.log[wordSplit[0]]
-        for(letter =0; letter <= wordSplit[arr].lenght; letter++){
-            let sliceString= ''
-
+        console.log("not going into loop..")
+        let sliceString= ''
+        for(letter =0; letter <= wordSplit[arr].lenght; letter++) {
+            
             console.log(wordSplit[arr][letter])
             if(vowels.includes[wordSplit[arr][letter]]){
-                // console.log(wordSplit[arr], letter)
+                console.log(wordSplit[arr], letter)
                 sliceString = wordSplit[arr].slice(0,letter)
-                // console.log(sliceString)
+                console.log(sliceString)
             }
-
+        }
         }//console.log(wordSplit)
     }
 };
